@@ -1,10 +1,10 @@
 package ba.unsa.etf.rpr;
 
 public class Sat {
-    int sati,minute,sekunde;
+    private int sati,minute,sekunde;
 
     Sat(int sati, int minute, int sekunde) { Postavi(sati,minute,sekunde); }
-    void Postavi(int satiT, int minuteT, int sekundeT) { sati=satiT; minute=minuteT; sekunde=sekundeT; }
+    void Postavi(int sati, int minute, int sekunde) { this.sati=sati; this.minute=minute; this.sekunde=sekunde; }
     void Sljedeci() {
         sekunde++;
         if (sekunde==60) { sekunde=0; minute++; }
